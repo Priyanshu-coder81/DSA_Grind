@@ -9,7 +9,7 @@ public class FoxAndSanke {
     for(int i  =0; i<n; i++) {
         if((i&1) == 0) {
             for(int j = 0;j<m; j++) {
-                System.err.print("#");
+                System.out.print("#");
             }
         }
         else {
