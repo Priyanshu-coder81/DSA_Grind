@@ -11,12 +11,12 @@ public class ErasingZeros {
         int i = 0; int j = t-1;
         int cnt = 0;
 
-        while(i<n && s.charAt(i) != '1') i++;
-        while(j>=0 && s.charAt(j) != '1') j++;
+        while(i<t && s.charAt(i) != '1') i++;
+        while(j>=0 && s.charAt(j) != '1') j--;
 
-        if(i>=n || j< 0) {
+        if(i>=t || j< 0) {
             System.out.println(0);
-            return;
+            continue;
         }
 
         while(i<=j) {
